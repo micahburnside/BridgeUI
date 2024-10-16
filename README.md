@@ -53,3 +53,29 @@ struct ContentView: View {
         }
     }
 }
+
+### Embedding a `UIView` in SwiftUI
+
+You can also embed a UIView into SwiftUI using the UIViewWrapper struct from BridgeUI:
+
+import SwiftUI
+import BridgeUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Text("SwiftUI View with UIKit UILabel")
+            
+            // Embedding UILabel using UIViewWrapper from BridgeUI
+            UIViewWrapper(makeUIView: {
+                let label = UILabel()
+                label.text = "This is a UILabel from UIKit"
+                label.textColor = .red
+                label.textAlignment = .center
+                return label
+            })
+            .frame(height: 50)
+            .padding()
+        }
+    }
+}
