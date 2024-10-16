@@ -56,7 +56,7 @@ struct ContentView: View {
 ```
 
 ### Embedding a `UIView` in SwiftUI
-
+```swift
 You can also embed a UIView into SwiftUI using the UIViewWrapper struct from BridgeUI:
 
 import SwiftUI
@@ -80,3 +80,4 @@ struct ContentView: View {
         }
     }
 }
+```
