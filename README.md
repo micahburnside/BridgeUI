@@ -53,6 +53,7 @@ struct ContentView: View {
         }
     }
 }
+```
 
 ### Embedding a `UIView` in SwiftUI
 
