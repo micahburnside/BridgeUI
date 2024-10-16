@@ -10,6 +10,7 @@ import SwiftUI
 import UIKit
 
 // A generic wrapper for any UIView
+@available(iOS 13.0, *)
 public struct UIViewWrapper<UIViewType: UIView>: UIViewRepresentable {
     
     // Closures for creating and updating the UIView
